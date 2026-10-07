@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Abubarkar</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #1f3a5f;
+        --secondary: #4b7bec;
+        --text: #1d1d1f;
+        --muted: #5d6778;
+        --border: #dfe7f1;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef3fb, #f9fbff);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .card {
+        width: min(90vw, 620px);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 18px 45px rgba(31, 58, 95, 0.12);
+        padding: 40px 32px;
+      }
+
+      .eyebrow {
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--secondary);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0 0 20px;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        color: var(--primary);
+      }
+
+      .info {
+        display: grid;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #f9fbff;
+      }
+
+      .label {
+        min-width: 92px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .value {
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="eyebrow">Contact</div>
+      <h1>Abubarkar</h1>
+
+      <div class="info">
+        <div class="row">
+          <span class="label">Phone:</span>
+          <span>1234567</span>
+        </div>
+
+        <div class="row">
+          <span class="label">Email:</span>
+          <a href="mailto:a.d.c@salford.ac.uk">a.d.c@salford.ac.uk</a>
+        </div>
+
+        <div class="row">
+          <span class="label">Address:</span>
+          <div class="value">
+            University of Salford<br />
+            The Crescent<br />
+            Salford, Greater Manchester<br />
+            M5 4WT<br />
+            United Kingdom
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
